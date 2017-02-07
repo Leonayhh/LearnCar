@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr3-TG-drn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="i4R-lU-T8d"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vzc-GF-fzr">
+                    <rect key="frame" x="0.0" y="201" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="a0E-pP-Kxw"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="0.039215686270000001" green="0.6705882353" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hr3-TG-drn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5zn-GH-aoX"/>
+                <constraint firstItem="vzc-GF-fzr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9HN-Hm-Lex"/>
+                <constraint firstAttribute="trailing" secondItem="Hr3-TG-drn" secondAttribute="trailing" id="L11-pr-v6p"/>
+                <constraint firstAttribute="bottom" secondItem="Hr3-TG-drn" secondAttribute="bottom" id="hIh-Vt-rBZ"/>
+                <constraint firstAttribute="bottom" secondItem="vzc-GF-fzr" secondAttribute="bottom" id="pJF-JL-YfF"/>
+                <constraint firstItem="Hr3-TG-drn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ruZ-X3-oAo"/>
+                <constraint firstAttribute="trailing" secondItem="vzc-GF-fzr" secondAttribute="trailing" id="w42-aM-hc0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerPageController" destination="vzc-GF-fzr" id="P0L-Ql-iAw"/>
+                <outlet property="bannerScrollView" destination="Hr3-TG-drn" id="ljM-UW-9by"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="121.5"/>
+        </view>
+    </objects>
+</document>

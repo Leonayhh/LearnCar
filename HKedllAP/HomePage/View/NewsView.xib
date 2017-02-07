@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NewsView">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os6-1j-DRS">
+                    <rect key="frame" x="14" y="17" width="4" height="14"/>
+                    <color key="backgroundColor" red="0.22602763310000001" green="0.9026130617" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="D9J-Sm-Iva"/>
+                        <constraint firstAttribute="width" constant="4" id="osW-HX-afi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻资讯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-XC-PlQ">
+                    <rect key="frame" x="23" y="15" width="70" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="L6w-HX-AN8"/>
+                        <constraint firstAttribute="width" constant="70" id="ubL-rl-0UZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教练干嘛呢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-t0-Czp">
+                    <rect key="frame" x="103" y="16" width="224" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Vcj-Ly-bb2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp1-OV-i8A">
+                    <rect key="frame" x="0.0" y="46" width="357" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vqL-ph-WKt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="os6-1j-DRS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="39B-wD-mVD"/>
+                <constraint firstItem="hdq-XC-PlQ" firstAttribute="leading" secondItem="os6-1j-DRS" secondAttribute="trailing" constant="5" id="9Xh-oY-v4r"/>
+                <constraint firstItem="os6-1j-DRS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Gs5-Oj-ICi"/>
+                <constraint firstItem="fp1-OV-i8A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JOV-1I-p86"/>
+                <constraint firstItem="Yob-t0-Czp" firstAttribute="leading" secondItem="hdq-XC-PlQ" secondAttribute="trailing" constant="10" id="Nhg-jN-s2V"/>
+                <constraint firstAttribute="trailing" secondItem="Yob-t0-Czp" secondAttribute="trailing" constant="30" id="d9E-tc-bPy"/>
+                <constraint firstAttribute="trailing" secondItem="fp1-OV-i8A" secondAttribute="trailing" id="sm3-N1-MIX"/>
+                <constraint firstItem="hdq-XC-PlQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tkC-FE-dqG"/>
+                <constraint firstAttribute="bottom" secondItem="fp1-OV-i8A" secondAttribute="bottom" id="wZu-Do-0QA"/>
+                <constraint firstItem="Yob-t0-Czp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yBu-II-Xxr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27.5" y="-220.5"/>
+        </view>
+    </objects>
+</document>

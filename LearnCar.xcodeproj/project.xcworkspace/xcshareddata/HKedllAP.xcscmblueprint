@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "388183cf-d32a-3c4b-a423-6949170c20ad++9287",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "388183cf-d32a-3c4b-a423-6949170c20ad++9287" : {
+
+    },
+    "388183cf-d32a-3c4b-a423-6949170c20ad++4304" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "388183cf-d32a-3c4b-a423-6949170c20ad++9287" : 0,
+    "388183cf-d32a-3c4b-a423-6949170c20ad++4304" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D7D30ABF-A0CF-4115-A7BC-E26420936DB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "388183cf-d32a-3c4b-a423-6949170c20ad++9287" : "HKedllAP_P52\/",
+    "388183cf-d32a-3c4b-a423-6949170c20ad++4304" : "HKedllAP_ZuQiu\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HKedllAP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HKedllAP.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/139.196.24.131:8443\/svn\/IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "388183cf-d32a-3c4b-a423-6949170c20ad++4304"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/139.196.24.131:8443\/svn\/IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "388183cf-d32a-3c4b-a423-6949170c20ad++9287"
+    }
+  ]
+}

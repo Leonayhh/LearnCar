@@ -1,0 +1,146 @@
+//
+//  PrefixHeader.pch
+//  GangQinEJia
+//
+//  Created by ly on 15/11/18.
+//  Copyright © 2015年 kedll. All rights reserved.
+//
+
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//系统框架--------------------------------------------------------------------------------------
+#ifdef __OBJC__
+
+# import <Availability.h>
+# import <AudioToolbox/AudioToolbox.h>
+# import <MediaPlayer/MPMoviePlayerViewController.h>
+# import <AVFoundation/AVFoundation.h>
+# import <Foundation/Foundation.h>
+# import <UIKit/UIKit.h>
+# import <QuartzCore/QuartzCore.h>
+# import <CoreMedia/CoreMedia.h>
+# import <CoreVideo/CoreVideo.h>
+# import <CoreFoundation/CoreFoundation.h>
+# import <CoreGraphics/CoreGraphics.h>
+# import <CoreMotion/CoreMotion.h>
+# import <CoreLocation/CoreLocation.h>
+#endif
+
+
+//开发框架--------------------------------------------------------------------------------------
+#ifndef DEBUG
+#define ALog(...) OffALog(__VA_ARGS__)
+#endif
+//OS_VERSION
+#define SysNumberVersion [[UIDevice currentDevice].systemVersion floatValue]
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_7_1
+#define IOS_VERSION_8_OR_ABOVE ((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) && SysNumberVersion >= 8)
+#else
+#define IOS_VERSION_8_OR_ABOVE NO
+#endif
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_6_1
+#define IOS_VERSION_7_OR_ABOVE ((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) && SysNumberVersion >= 7)
+#else
+#define IOS_VERSION_7_OR_ABOVE NO
+#endif
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_5_1
+#define IOS_VERSION_6_OR_ABOVE ((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) && SysNumberVersion >= 6)
+#else
+#define IOS_VERSION_6_OR_ABOVE NO
+#endif
+
+#define DB_ResName   @"AppRes"
+#define DB_RELRES(P) [NSString stringWithFormat:@"./%@/%@",DB_ResName,P] //相对路径
+
+//应用配置--------------------------------------------------------------------------------------
+//16进制颜色
+#define UIColorFromRGB(rgbValue,p)  [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:(p)]
+//RGB颜色颜色
+#define HKRGBColor(a,b,c,d) [UIColor colorWithRed:(a)/255. green:(b)/255. blue:(c)/255. alpha:(d)]
+
+
+#define DB_UserConfig              @"UserConfig.archive"
+#define DB_AppConfig               @"AppConfig.archive"
+#define DB_AreaConfig               @"AreaConfig.archive"
+#define TopWinHeight               64//窗体顶部的高度
+#define BottomWinHeight            49//窗体底部的高度
+
+//屏幕的宽高
+#define  kScreenW [UIScreen mainScreen].bounds.size.width
+#define  kScreenH [UIScreen mainScreen].bounds.size.height
+
+#define RGBA(a,b,c,d)     [UIColor colorWithRed:(a/255.0f) green:(b/255.0f) blue:(c/255.0f) alpha:1]
+//imageView 背景
+#define Color_ImageViewBg [UIColor colorWithRed:220.0f/255.0f green:219.0f/255.0f blue:225.0f/255.0f alpha:1.0f]
+//第三方引入
+//自引入头文件---------------------------------------------------------------
+#ifdef __OBJC__
+
+#import "ZSYYColorConfig.h"
+#import "UIImage+UIImageScale.h"
+#import "UIView+Extend.h"
+#import "XYRegValidate.h"
+#import "UIViewExt.h"
+#import "XYStringOperate.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "JSONKit.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "NSDate+Utils.h"
+#import "DateFromNow.h"
+#import "XYButton.h"
+#import "UIViewController+HUD.h"
+#import "KEDIOS.h"
+#import "FileManager.h"
+#import "CacheManager.h"
+#import "XYUtils.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIView+MJExtension.h"
+
+#import "UIImage+ImageEffects.h"
+#import "UIViewExt.h"
+#import "UIImageView+WebCache.h"
+#import "XYStringOperate.h"
+#import "JSONKit.h"
+#import "DateFromNow.h"
+#import "XYButton.h"
+#import "UIView+Extend.h"
+#import "UIImage+UIImageScale.h"
+#import "KLCPopup.h"
+#import "HKAppVC.h"
+//工程引入---------------------------------------------------------------
+#import "AppDelegate.h"
+#import "HKAppPower.h"
+#import "HKAppURC.h"
+#import "ApiCenter.h"
+#import "HKCtrlProtocol.h"
+#import "XHMacro.h"
+#import "XMLReader.h"
+#import "RecordInstace.h"
+
+#endif
+
+#define appDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+//============================本地数据============================
+
+//第三方----------------------------------------------------------------------------------------
+#define MAMapKitKey @"48a1e97c25fc8df5fe459baa78d61b4a"
+
+
+//结尾------------------------------------------------------------------------------------------
+
+
+#endif

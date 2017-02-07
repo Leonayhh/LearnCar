@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke_2.121:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf.services">
+            </PersistentString>
+            <PersistentString
+               value = "services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BabyCentralManager connectToPeripheral:]:BabyCentralManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[currChannel babyOptions].connectPeripheralWithOptions">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke.70:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf.services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BabyCentralManager sometimes_ever:]:BabyCentralManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HKBLEBackPower babyConnectDeviceSet]:HKBLEBackPower.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HKBLEBackPower observeValueForKeyPath:ofObject:change:context:]:HKBLEBackPower.m">
+      </ContextState>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke_4:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf">
+            </PersistentString>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HKPowuerCtrl viewDidLoad]:HKPowuerCtrl.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[HKAppVC initBgView]:HKAppVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke_3:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HKBLEBackPower startConnnetPeripheral:]:HKBLEBackPower.m">
+      </ContextState>
+      <ContextState
+         contextName = "__copy_helper_block_:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf.services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke.74:HKBLEBackPower.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "weakSelf.services">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__38-[HKBLEBackPower babyConnectDeviceSet]_block_invoke:HKBLEBackPower.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
